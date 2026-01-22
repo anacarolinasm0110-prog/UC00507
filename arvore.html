@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Árvore de Natal com Bolas Grandes</title>
+<style>
+  body {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .arvore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0; /* elimina espaço extra entre linhas */
+  }
+
+  .linha {
+    display: flex;
+    justify-content: center;
+    margin: -8px 0; /* para encostar verticalmente as linhas */
+  }
+
+  .bola {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    margin: 0; /* sem espaço entre as bolinhas */
+    box-sizing: border-box;
+  }
+
+  /* Bolinhas coloridas enfeite */
+  .bola.vermelha { background-color: red; }
+  .bola.amarela { background-color: yellow; }
+  .bola.azul { background-color: blue; }
+  .bola.rosa { background-color: pink; }
+  .bola.laranja { background-color: orange; }
+
+  /* Tronco */
+  .tronco {
+    width: 70px;
+    height: 90px;
+    background-color: brown;
+    margin: 10px auto 0 auto;
+    border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+
+<div class="arvore">
+  <div class="linha">
+    <div class="bola"></div>
+  </div>
+  <div class="linha">
+    <div class="bola"></div>
+    <div class="bola vermelha"></div>
+  </div>
+  <div class="linha">
+    <div class="bola azul"></div>
+    <div class="bola"></div>
+    <div class="bola amarela"></div>
+  </div>
+  <div class="linha">
+    <div class="bola"></div>
+    <div class="bola rosa"></div>
+    <div class="bola"></div>
+    <div class="bola laranja"></div>
+  </div>
+  <div class="linha">
+    <div class="bola amarela"></div>
+    <div class="bola"></div>
+    <div class="bola"></div>
+    <div class="bola vermelha"></div>
+    <div class="bola"></div>
+  </div>
+
+  <div class="tronco"></div>
+</div>
+
+</body>
+</html>
